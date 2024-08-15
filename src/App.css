@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cGF0aCBkPSJNMjggNjZMMCA1MHYtMTZsMjgtMTYgMjggMTZ2MTZ6IiBmaWxsPSIjZGRkIiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8cGF0aCBkPSJNMjggMEwwIDE2djE2bDI4IDE2IDI4LTE2VjE2eiIgZmlsbD0iI2FhYSIgZmlsbC1vcGFjaXR5PSIwLjEiLz4KPC9zdmc+');
+  background-repeat: repeat;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  display: flex;
   min-height: 100vh;
+}
+
+.social-sidebar {
+  width: 60px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.social-icon {
+  margin: 10px 0;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3b82f6; /* Tailwind's blue-600 */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 6xl;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #3b82f6; /* Tailwind's blue-600 */
+}
+
+main {
+  max-width: 4xl;
+  margin: 100px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #3b82f6; /* Tailwind's blue-600 */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #3b82f6; /* Tailwind's blue-600 */
   color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.cta-button:hover {
+  background-color: #2563eb; /* Tailwind's blue-700 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cta-button svg {
+  margin-left: 0.5rem;
 }
