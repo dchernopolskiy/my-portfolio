@@ -3,6 +3,7 @@ import Project from './Project';
 import projectsData from './projectsData.json';
 import { ArrowRight, Github, Linkedin, Instagram, BookOpen, YouTube } from 'lucide-react';
 import ScrollDownArrow from './ScrollDownArrow'
+import ContactForm from './ContactForm'; 
 
 const backgroundImage = `${process.env.PUBLIC_URL}/img/background.jpeg`;
 const VisiblePortfolioWithFixedSocials = () => {
@@ -99,21 +100,21 @@ const VisiblePortfolioWithFixedSocials = () => {
 			 <section id="about" className="bg-white py-16 px-4">
 			  <div className="container mx-auto max-w-4xl">
 			    <h2 className="text-4xl font-bold text-center mb-8">ABOUT ME</h2>
-			    <p className="text-center mb-8">
-			      Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
-			    </p>
+{/*			    <p className="text-center mb-8">
+			      I've worked with creation of extremely capable teams for years now. I'm fortunate enough to have worked with incredible professionals that taught me incredible things, trusted me with their knowledge and personalities and I'm hoping to share this experience forward. I'm always looking for something in AR/XR space and robotics, ideally oriented towards helping people with disabilities. I would love to work on the implementation of things that will help people! Anything in the field of device development, AI implementation in daily life, Platform implementation, potentially Cloud.
+			    </p>*/}
 			    <div className="flex flex-wrap -mx-4">
 			      <div className="w-full md:w-1/2 px-4 mb-8">
 			        <h3 className="text-2xl font-bold mb-4">Get to know me!</h3>
 			        <p className="mb-4">
-			          I'm a Program Manager building and managing products that lead to the success of the overall product. Check out some of my work in the Projects section.
+			          I've worked with creation of extremely capable teams for years now. I'm fortunate enough to have worked with incredible professionals that taught me incredible things, trusted me with their knowledge and personalities and I'm hoping to share this experience forward. 
 			        </p>
 			        <p className="mb-4">
-			          I also like sharing content related to the stuff that I have learned over the years in Program Management so it can help other people of the Dev Community.
+			          I'm always looking for something in AR/XR space and robotics, ideally oriented towards helping people with disabilities. I would love to work on the implementation of things that will help people! Anything in the field of device development, AI implementation in daily life, Platform implementation, potentially Cloud.
 			        </p>
-			        <p>
+{/*			        <p>
 			          I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
-			        </p>
+			        </p>*/}
 			        <a 
 			          href="#contact" 
 			          className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
@@ -147,6 +148,25 @@ const VisiblePortfolioWithFixedSocials = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+        <section id="contact" className="bg-white py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-4xl font-bold text-center mb-8">CONTACT ME</h2>
+            <p className="text-center mb-8">
+            	//This doesn't work yet! email me to daniil.chernopolskii@gmail.com ;)
+            </p>
+            <p className="text-center mb-8">
+              Feel free to reach out if you have any questions or if you'd like to work together!
+            </p>
+            <ContactForm />
+          </div>
+        </section>
+			  <footer className="bg-gray-100 text-black py-8">
+    		<div className="container mx-auto text-center px-4">
+      	<p>&copy; 2024 Dan Chernopolskii</p>
+    		</div>
+  			</footer>
       </div>
     </div>
   );

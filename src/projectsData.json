@@ -1,5 +1,12 @@
 [
   {
+    "title": "Implementation of a company-wide Hackathon events",
+    "description": "Introduced the concept of Hackathons in North American part of the company, later scaled to company-wide. Developed front-end of the Hackathon website, developed MVP of backend. Engaged a team to finish the product, organized communication and events around Hackathon organization",
+    "image": "hackathon.png",
+    "skills": ["React", "Node.JS", "Product management"],
+    "caseStudyLink": "https://luxofthack.netlify.app/"
+  },
+  {
     "title": "Enabling effective monetization of connected car data",
     "description": "Built the MVP platform that would allow data monetization in automotive fleet insurance use cases. Read gps and visual based monitoring and predictive maintenance for fleet vehicles. New architecture had been submitted as an Open-Source standard to SOAFEE. Utilized S32G ARM SOC boards with CAN Bus and OBD2 connection. Organized entire product delivery cycle starting with chip delivery to Moter and finishing with in-vehicle testing.",
     "image": "moter.jpg",
