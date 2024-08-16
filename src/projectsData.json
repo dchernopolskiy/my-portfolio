@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Enabling effective monetization of connected car data",
+    "description": "Built the MVP platform that would allow data monetization in automotive fleet insurance use cases. Read gps and visual based monitoring and predictive maintenance for fleet vehicles. New architecture had been submitted as an Open-Source standard to SOAFEE. Utilized S32G ARM SOC boards with CAN Bus and OBD2 connection. Organized entire product delivery cycle starting with chip delivery to Moter and finishing with in-vehicle testing.",
+    "image": "moter.jpg",
+    "skills": ["C++", "WindRiver Linux", "Amazon AWS"],
+    "caseStudyLink": "https://www.swan-ins.com/emails/2024_05/MOTER-Risk-Analytics-Program.pdf"
+  },
+  {
+    "title": "Prime Brokerage Cross-Margin Risk and AnalysisSystem",
+    "description": "Risk and Margin analysis for Prime Brokerage, real time risk assessment, liquidity analysis and a platform for managing cross margin on the portfolios.",
+    "image": "crossmargin.jpeg",
+    "skills": ["React.js", "Node.js", "Spring", "Apache Spark", "Sybase", "Solaris", "OpenSUSE"],
+    "caseStudyLink": "https://www.risk.net/awards/7955814/prime-broker-of-the-year-bnp-paribas"
+  },
+  {
+    "title": "Automatic RTK base station assignment to a field",
+    "description": "Implementation of the system of automatic RTK base station switch according to a GPS position and related field. Enabled off-hands operation and removed errors in boundary mapping, as well as boundary drift for existing fields.",
+    "image": "rtk.png",
+    "skills": ["C++", "QT", "Gen4OS", "WindRiver Linux"],
+    "caseStudyLink": "https://www.deere.com/en/technology-products/precision-ag-technology/guidance/mobile-rtk/",
+    "youtubeLink": "https://www.youtube.com/watch?v=5GOibtZZzy4&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA"
+  },
+  {
+    "title": "AutoTrac Headland Boundaries",
+    "description": "Implementation of the feature that helped farmers to better plan automatic machine turns while autopilot is engaged, by creating virtual boundaries of the crop, field, or aligning to physical boundaries of the farm, and then calculating the turn radius based on multiple parameters, such as implement width, machine type, and, of course, boundary parameters.",
+    "image": "turnautomation.jpg",
+    "skills": ["C++", "QT", "Gen4OS", "WindRiver Linux", "MatLab"],
+    "caseStudyLink": "https://www.deere.com/en/technology-products/precision-ag-technology/guidance/auto-trac-turn-automation/",
+    "youtubeLink": "https://youtu.be/V1u53mBVGvQ?si=levvor0_-LlccHNn"
+  }
+]

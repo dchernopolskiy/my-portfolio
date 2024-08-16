@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
+import Project from './Project';
+import projectsData from './projectsData.json';
 import { ArrowRight, Github, Linkedin, Instagram, BookOpen, YouTube } from 'lucide-react';
-import backgroundImage from './img/background.jpeg';
-import project1 from './img/moter.png'
-import project2 from './img/crossmargin.jpeg'
-import project3 from './img/rtk.png'
-import project4 from './img/turnautomation.jpg'
 import ScrollDownArrow from './ScrollDownArrow'
 
+const backgroundImage = `${process.env.PUBLIC_URL}/img/background.jpeg`;
 const VisiblePortfolioWithFixedSocials = () => {
   useEffect(() => {
     const smoothScroll = (e) => {
@@ -33,10 +31,10 @@ const VisiblePortfolioWithFixedSocials = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Background image */}
-      <div 
-        className="fixed inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      />
+			<div 
+			  className="fixed inset-0 bg-cover bg-center z-0"
+			  style={{ backgroundImage: `url(${backgroundImage})` }}
+			/>
       
       {/* Overlay with reduced opacity */}
       <div className="fixed inset-0 bg-black opacity-30 z-10" />
@@ -136,119 +134,19 @@ const VisiblePortfolioWithFixedSocials = () => {
 			</section>
 
         {/* Projects Section */}
-        <section id="projects" className="min-h-screen bg-gray-100 py-20 px-4">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-8">PROJECTS</h2>
-            <p className="text-center mb-12">
-              Here you will find some of the personal and clients projects that I created with each project containing its own case study
-            </p>
-            <div className="space-y-12">
-              {/* Project 1 */}
-              <div className="flex flex-wrap items-center -mx-4">
-                <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                  <img src={project1} alt="Project 1" className="rounded-lg shadow-lg" />
-                </div>
-                <div className="w-full md:w-1/2 px-4">
-                  <h3 className="text-2xl font-bold mb-4">Enabling effective monetization of connected car data</h3>
-                  <p className="mb-4">
-                    Built the MVP platform that would allow data monetization in automotive fleet insurance use cases. Read gps and visual based monitoring and predictive maintenance for fleet vehincles. New architecture had been submitted as an Open-Source standard to SOAFEE. 
-                    Utilized S32G ARM SOC boards with CAN Bus and OBD2 connection. Organized entire product delivery cycle starting with chip delivery to Moter and finishing with in-vehicle testing.
-                    <br />
-                    <a 
-                    href="https://www.luxoft.com/pr/luxoft-joins-soafee-sig" className="text-gray-800 hover:text-blue-600">SOAFEE Contribution
-                    </a>
-                    <br />
-                    <a 
-                    href="https://www.nxp.com/company/about-nxp/nxp-semiconductors-and-moter-technologies-join-forces-to-extend-connected-vehicle-insurance-opportunities:NW-NXP-SEMICONDUCTORS-AND-MOTER-TECHNOLOGIES" className="text-gray-800 hover:text-blue-600">NXP Partnership Study
-                    </a>
-                  </p>
-					        <div className="flex flex-wrap -mx-2">
-					          {['C++', 'WindRiver Linux', 'Amazon AWS'].map((skill) => (
-					            <span key={skill} className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm m-2">{skill}</span>
-					          ))}
-					        </div>
-                  <a 
-                    href="https://www.swan-ins.com/emails/2024_05/MOTER-Risk-Analytics-Program.pdf" 
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    CASE STUDY
-                  </a>
-                </div>
-              </div>
-              {/* Project 2 */}
-               <div className="flex flex-wrap items-center -mx-4">
-                <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                  <img src={project2} alt="Project 2" className="rounded-lg shadow-lg" />
-                </div>
-                <div className="w-full md:w-1/2 px-4">
-                  <h3 className="text-2xl font-bold mb-4">Prime Brokerage Cross-Margin Risk and Analysis System</h3>
-                  <p className="mb-4">
-                    Risk and Margin analysis for Prime Brokerage, real time risk assessment, liquidity analysis and a platform for managing cross margin on the portfolios.
-                  </p>
-					        <div className="flex flex-wrap -mx-2">
-					          {['React.js', 'Node.js', 'Spring', 'Apache Spark', 'Sybase', 'Solaris', 'OpenSUSE'].map((skill) => (
-					            <span key={skill} className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm m-2">{skill}</span>
-					          ))}
-					        </div>
-
-									<a 
-                    href="https://www.risk.net/awards/7955814/prime-broker-of-the-year-bnp-paribas" 
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    CASE STUDY
-                  </a>
-                </div>
-              </div>
-              {/* Project 3 */}
-              <div className="flex flex-wrap items-center -mx-4">
-                <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                  <img src={project3} alt="Project 3" className="rounded-lg shadow-lg" />
-                </div>
-                <div className="w-full md:w-1/2 px-4">
-                  <h3 className="text-2xl font-bold mb-4">Automatic RTK base station assignment to a field</h3>
-                  <p className="mb-4">
-                    Implementation of the system of automatic RTK base station switch according to a GPS position and related field. Enabled off-hands operation and removed errors in boundary mapping, as well as boundary drift for existing fields.
-                  </p>
-					        <div className="flex flex-wrap -mx-2">
-					          {['C++', 'QT', 'Gen4OS', 'WindRiver Linux'].map((skill) => (
-					            <span key={skill} className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm m-2">{skill}</span>
-					          ))}
-					        </div>
-                  <a 
-                    href="https://www.deere.com/en/technology-products/precision-ag-technology/guidance/mobile-rtk/" 
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    CASE STUDY
-                  </a>
-                </div>
-              </div>
-              {/* Project 4 */}
-              <div className="flex flex-wrap items-center -mx-4">
-                <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-                  <img src={project4} alt="Project 4" className="rounded-lg shadow-lg" />
-                </div>
-                <div className="w-full md:w-1/2 px-4">
-                  <h3 className="text-2xl font-bold mb-4">AutoTrac Headland Boundaries</h3>
-                  <p className="mb-4">
-                    Implementation of the feature that helped farmers to better plan automatic machine turns while autopilot is engaged, by creating virtual boundaries of the crop, field, 
-                    or aligning to physical boundaries of the farm, and then calculating the turn radius based on multiple parameters, such as implement width, machine type, and, of course, boundary parameters.
-                  </p>
-					        <div className="flex flex-wrap -mx-2">
-					          {['C++', 'QT', 'Gen4OS', 'WindRiver Linux', 'MatLab'].map((skill) => (
-					            <span key={skill} className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm m-2">{skill}</span>
-					          ))}
-					        </div>
-                  <a 
-                    href="https://www.deere.com/en/technology-products/precision-ag-technology/guidance/auto-trac-turn-automation/" 
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    CASE STUDY
-                  </a>
-                </div>
-              </div>
-            </div>
+      <section id="projects" className="min-h-screen bg-gray-100 py-20 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8">PROJECTS</h2>
+          <p className="text-center mb-12">
+            Here you will find some of the personal and clients projects that I created with each project containing its own case study
+          </p>
+          <div className="space-y-12">
+            {projectsData.map((project, index) => (
+              <Project key={index} {...project} />
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
       </div>
     </div>
   );
