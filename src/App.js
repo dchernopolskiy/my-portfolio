@@ -76,25 +76,30 @@ const VisiblePortfolioWithFixedSocials = () => {
 
       {/* Content */}
       <div className="relative z-20 pt-16">
-        {/* Home Section */}
-				<section id="home" className="min-h-screen flex items-center justify-center px-4 relative">
-          <div className="text-center">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              Hey, I'm <span className="text-blue-300">Dan Chernopolskii</span>
-            </h2>
-            <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-              I'm a program manager. I love building products and capable teams, tinkering with cars and electronics, photography and cats.
-            </p>
-            <a 
-              href="#projects" 
-              className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
-            >
-              View Projects
-              <ArrowRight className="ml-2" size={20} />
-            </a>
-          </div>
-          <ScrollDownArrow />
-        </section>
+      
+			{/* Home Section */}
+			<section id="home" className="min-h-screen flex flex-col justify-between items-center px-4 py-16 relative">
+			  <div className="flex-1 flex items-center">
+			    <div className="text-center">
+			      <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
+			        Hey, I'm <span className="text-blue-300">Dan Chernopolskii</span>
+			      </h2>
+			      <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+			        I'm a program manager. I love building products and capable teams, tinkering with cars and electronics, photography and cats.
+			      </p>
+			      <a 
+			        href="#projects" 
+			        className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+			      >
+			        View Projects
+			        <ArrowRight className="ml-2" size={20} />
+			      </a>
+			    </div>
+			  </div>
+			  <div className="mt-8">
+			    <ScrollDownArrow />
+			  </div>
+			</section>
 
         {/* About Section */}
 			 <section id="about" className="bg-white py-16 px-4">
