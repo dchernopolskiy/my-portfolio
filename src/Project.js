@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project = ({ title, description, image, skills, caseStudyLink, youtubeLink }) => {
+const Project = ({ title, description, image, skills, caseStudyLink, youtubeLink, caseStudyButtonText }) => {
   return (
     <div className="flex flex-wrap items-center -mx-4 mb-12">
       <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
@@ -22,7 +22,7 @@ const Project = ({ title, description, image, skills, caseStudyLink, youtubeLink
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
             >
-              CASE STUDY
+              {caseStudyButtonText || "CASE STUDY"}
             </a>
           )}
           {youtubeLink && (

@@ -1,10 +1,11 @@
 [
-   {
+    {
     "title": "This website",
     "description": "Yes, this website. I found myself in the spot where job market is extremely volatile, my resume is in-between positions and my programming skills haven't been refreshed since 2020. I decided to see if I can pick up React and create this to support my resume. You can check out the code below!",
     "image": "portfolio.jpg",
     "skills": ["React", "Node.JS", "Product management"],
-    "caseStudyLink": "https://github.com/dchernopolskiy/my-portfolio"
+    "caseStudyLink": "https://github.com/dchernopolskiy/my-portfolio",
+    "caseStudyButtonText": "View on GitHub"
   },
   {
     "title": "Implementation of a company-wide Hackathon events",
@@ -42,7 +43,8 @@
     "image": "tcmcalibration.jpg",
     "skills": ["C++", "QT", "Gen4OS", "WindRiver Linux", "MatLab"],
     "caseStudyLink": "https://www.deere.com/assets/pdfs/common/stellarsupport/20-3-gen4-re-release-notes-english.pdf",
-    "youtubeLink": "https://www.youtube.com/watch?v=XPCN_JF-09o&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA&index=4"
+    "youtubeLink": "https://www.youtube.com/watch?v=XPCN_JF-09o&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA&index=4",
+    "caseStudyButtonText": "Release Notes"
   },
   {
     "title": "Operations Center",
