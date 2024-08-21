@@ -1,4 +1,11 @@
 [
+   {
+    "title": "This website",
+    "description": "Yes, this website. I found myself in the spot where job market is extremely volatile, my resume is in-between positions and my programming skills haven't been refreshed since 2020. I decided to see if I can pick up React and create this to support my resume. You can check out the code below!",
+    "image": "hackathon.png",
+    "skills": ["React", "Node.JS", "Product management"],
+    "caseStudyLink": "https://github.com/dchernopolskiy/my-portfolio"
+  },
   {
     "title": "Implementation of a company-wide Hackathon events",
     "description": "Introduced the concept of Hackathons in North American part of the company, later scaled to company-wide. Developed front-end of the Hackathon website, developed MVP of backend. Engaged a team to finish the product, organized communication and events around Hackathon organization",
@@ -14,16 +21,9 @@
     "caseStudyLink": "https://www.swan-ins.com/emails/2024_05/MOTER-Risk-Analytics-Program.pdf"
   },
   {
-    "title": "Prime Brokerage Cross-Margin Risk and AnalysisSystem",
-    "description": "Risk and Margin analysis for Prime Brokerage, real time risk assessment, liquidity analysis and a platform for managing cross margin on the portfolios.",
-    "image": "crossmargin.jpeg",
-    "skills": ["React.js", "Node.js", "Spring", "Apache Spark", "Sybase", "Solaris", "OpenSUSE"],
-    "caseStudyLink": "https://www.risk.net/awards/7955814/prime-broker-of-the-year-bnp-paribas"
-  },
-  {
     "title": "Automatic RTK base station assignment to a field",
-    "description": "Implementation of the system of automatic RTK base station switch according to a GPS position and related field. Enabled off-hands operation and removed errors in boundary mapping, as well as boundary drift for existing fields.",
-    "image": "rtk.png",
+    "description": "Implementation of the system of automatic RTK base station switch according to a GPS position and related field. Enabled off-hands operation and removed errors in boundary mapping, as well as boundary drift for existing fields. Yes, that's me in the tractor.",
+    "image": "rtk.jpeg",
     "skills": ["C++", "QT", "Gen4OS", "WindRiver Linux"],
     "caseStudyLink": "https://www.deere.com/en/technology-products/precision-ag-technology/guidance/mobile-rtk/",
     "youtubeLink": "https://www.youtube.com/watch?v=5GOibtZZzy4&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA"
@@ -36,4 +36,43 @@
     "caseStudyLink": "https://www.deere.com/en/technology-products/precision-ag-technology/guidance/auto-trac-turn-automation/",
     "youtubeLink": "https://youtu.be/V1u53mBVGvQ?si=levvor0_-LlccHNn"
   }
+  {
+    "title": "Advanced TCM Calibration",
+    "description": "Implementation of a completely new method of performing yaw and pitch calibration for Cab and Implement installed GPS receivers. That feature is now used on every single machine produced as part of factory calibration process AND by every farmer using the equipment for on-land corrections.",
+    "image": "tcmcalibration.jpg",
+    "skills": ["C++", "QT", "Gen4OS", "WindRiver Linux", "MatLab"],
+    "caseStudyLink": "https://www.deere.com/assets/pdfs/common/stellarsupport/20-3-gen4-re-release-notes-english.pdf",
+    "youtubeLink": "https://www.youtube.com/watch?v=XPCN_JF-09o&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA&index=4"
+  }
+  {
+    "title": "Operations Center",
+    "description": "Implementation of several parts of John Deere Operations Center, business-critical online operations management system that enables complete data sync between machines, management of the multiple farms and job sites, and provides Farm Managers with comprehensive information on field and work status. Our teams helped to bring this product to market.",
+    "image": "tcmcalibration.jpg",
+    "skills": ["C++", "QT", "Gen4OS", "WindRiver Linux", "MatLab"],
+    "caseStudyLink": "https://www.deere.com/en/technology-products/precision-ag-technology/operations-center/",
+    "youtubeLink": "https://www.youtube.com/watch?v=65TlVAkKbnE&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA&index=5"
+  }
+  {
+    "title": "Precision Construction Technology",
+    "description": "Based on the previous experience with bringing up Operations Center, created a MVP for the Precision Technology management dashboard for construction equipment. Team created mapping, balancers, machine connectivity, dashboard for job site management and comprehensive statuses for machines.",
+    "image": "tcmcalibration.jpg",
+    "skills": ["React.JS", "Node.JS", "Amazon AWS", "Amazon S3", "Elasticache", "DynamoDB"],
+    "caseStudyLink": "https://www.deere.com/en/technology-products/precision-construction-technology/",
+    "youtubeLink": "https://www.youtube.com/watch?v=rMJEbXBY_uQ&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA&index=6"
+  }
+  {
+    "title": "HarvestLab Connect",
+    "description": "Imnplementation of the iOS application and connection point for streaming data from the grain analysis device.",
+    "image": "harvest.jpg",
+    "skills": ["Swift", "AWS"],
+    "caseStudyLink": "https://deerequipment.com/new_equipment/john-deere-harvestlab%E2%84%A2-3000-harvestlab%E2%84%A2-and-constituent-sensing/",
+    "youtubeLink": "https://www.youtube.com/watch?v=-vcquwxtqlU&list=PLjCLg32Aazj1BFCA3HLmAnlpGr5g22UKA&index=7"
+  }
+  {
+    "title": "Prime Brokerage Cross-Margin Risk and AnalysisSystem",
+    "description": "Risk and Margin analysis for Prime Brokerage, real time risk assessment, liquidity analysis and a platform for managing cross margin on the portfolios.",
+    "image": "crossmargin.jpeg",
+    "skills": ["React.js", "Node.js", "Spring", "Apache Spark", "Sybase", "Solaris", "OpenSUSE"],
+    "caseStudyLink": "https://www.risk.net/awards/7955814/prime-broker-of-the-year-bnp-paribas"
+  },
 ]
