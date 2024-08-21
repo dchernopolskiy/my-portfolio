@@ -159,7 +159,6 @@ const VisiblePortfolioWithFixedSocials = () => {
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-4xl font-bold text-center mb-8">CONTACT ME</h2>
             <p className="text-center mb-8">
-            	//This doesn't work yet! email me to daniil.chernopolskii@gmail.com ;)
             </p>
             <p className="text-center mb-8">
               Feel free to reach out if you have any questions or if you'd like to work together!

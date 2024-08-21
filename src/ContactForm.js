@@ -20,7 +20,7 @@ const ContactForm = () => {
     setSubmitMessage('');
 
     try {
-      const response = await fetch('/api/send-email', {
+    const response = await fetch('https://my-portfolio-2s9g.onrender.com/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
