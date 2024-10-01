@@ -4,6 +4,7 @@ import projectsData from './projectsData.json';
 import { ArrowRight, Github, Linkedin, Instagram, BookOpen, YouTube } from 'lucide-react';
 import ScrollDownArrow from './ScrollDownArrow'
 import ContactForm from './ContactForm'; 
+import MediumBlog from './MediumBlog';
 
 const backgroundImage = `${process.env.PUBLIC_URL}/img/background.jpeg`;
 const VisiblePortfolioWithFixedSocials = () => {
@@ -69,6 +70,7 @@ const VisiblePortfolioWithFixedSocials = () => {
 		      <a href="#home" className="text-gray-800 hover:text-blue-600">Home</a>
 		      <a href="#about" className="text-gray-800 hover:text-blue-600">About</a>
 		      <a href="#projects" className="text-gray-800 hover:text-blue-600">Projects</a>
+		      <a href="#blog" className="text-gray-800 hover:text-blue-600">Blog</a>
 		      <a href="#contact" className="text-gray-800 hover:text-blue-600">Contact</a>
 		    </div>
 		  </div>
@@ -153,6 +155,9 @@ const VisiblePortfolioWithFixedSocials = () => {
           </div>
         </div>
       </section>
+
+      {/* Blog Section */}
+        <MediumBlog />
 
       {/* Contact Section */}
         <section id="contact" className="bg-white py-16 px-4">
